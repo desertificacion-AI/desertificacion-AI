@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-![alt text](https://github.com/desertificacion-AI/desertificacion-AI/blob/main/desertIArag%C3%B3n.png)
+
 
 <!--
 **desertificacion-AI/desertificacion-AI** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
