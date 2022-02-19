@@ -1,7 +1,5 @@
 ### Hi there 👋
 
-![alt text](https://github.com/desertificacion-AI/desertificacion-AI/desertIAragon.png)
-
 ![alt text](https://github.com/desertificacion-AI/desertificacion-AI/blob/main/desertIArag%C3%B3n.png)
 
 <!--
