@@ -211,25 +211,34 @@ aragon_simple=aragon['geometry'].iloc[0].convex_hull
 
 #query de busqueda en sentinelsat del area indicada, fecha inicio=20160101, fecha fin=20200101
 #del satelite Sentinel-2, y un % de nubes de 0 a 10
-products = api.query(aragon_simple,
-                      date = ('20160101', '20200101'),
+tile = '31TBG'
+
+query_kwargs = {
+        'platformname': 'Sentinel-2',
+        'date': ('20210101', '20220201'),
+        'relativeorbitnumber':'51'}
+kw = query_kwargs.copy()
+kw['tileid'] = tile
+products = api.query(aragon_simple, cloudcoverpercentage = (0,10),**kw)
+'''products = api.query(aragon_simple,                      
+                      date = ('20210101', '20220201'),
                       platformname = 'Sentinel-2',
                       cloudcoverpercentage = (0,10)
-                    )
+                    )'''
 
 #longitud
 print(len(products))
 #Para cada imagen seleccionada pinta el uuid y nos indica si esta online
 for i in products:
     product = products[i]
-    filename = product['uuid']
-    print(filename)
-    api.is_online(filename)
+    filename = product['title']
+    print(filename)    
+    #api.is_online(filename)
 #api.to_geojson(products)
 
 
 #De los datos seleccionados en la query se descargan todos
-api.download_all(products)
+#api.download_all(products)
 
 #Otras formas de descarga
 #Todos los productos en el path indicado
