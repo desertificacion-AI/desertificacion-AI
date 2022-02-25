@@ -5,6 +5,7 @@
 Este proyecto hace parte de la iniciativa Saturdays AI en su 1a. edición, en la ciudad de Zaragoza, donde se busca que la Inteligencia Artificial (IA) sea accesible a cualquier persona a través de la creación de comunidades y formación en machine learning realizando proyectos con impacto.
 
 Nuestra idea es explorar una aproximación a la predicción de zonas de desertificación en Aragón usando las estrategias y metodologías de IA. Exploramos a su vez la obtención de imágenes satelitales y su correspondiente tratamiento para posteriores usos adicionales.
+## 
 
 ### Dataset
 Ya que se hará un análisis sobre cambios en la superficie terrestre, la desertificación, utilizamos los productos del instrumento Sentinel 2A. Usando  la librería de Python SentinelSat para la descarga automática de imágenes en el área que nos interesa.
@@ -23,7 +24,9 @@ La aplicabilidad de esta aproximación puede encaminarse hacia:
 - Variación climática y relacion con la vegetación
 - Entre otros.
 
+## 
+
 ### Participantes
-Eva de Miguel Morales
-Pedro Biel
-Yineth Castiblanco Rojas
+- Eva de Miguel Morales
+- Pedro Biel
+- Yineth Castiblanco Rojas
