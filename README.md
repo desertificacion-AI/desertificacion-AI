@@ -22,7 +22,17 @@ La aplicabilidad de esta aproximación puede encaminarse hacia:
 - Cultivos y mejoramiento de zonas agrícolas
 - Zonas de pastoreo
 - Variación climática y relacion con la vegetación
-- Entre otros.
+- Procesamiento y enriquecimiento del algoritmo con ayuda de las tecnologías en la Nube y el procesamiento paralelo o distribuído.
+
+### Tecnología Involucrada
+- Python
+- Sentinelsat
+- Matplotlib
+- Pandas
+- rasterio
+- osgeo
+- sklearn
+- Pillow
 
 ## 
 
