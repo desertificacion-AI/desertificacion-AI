@@ -5,36 +5,29 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from rasterio import plot
 
+tfpredicho=open('predicho.txt')
+tfreal=open('fotoreal.txt')
 
-'''with open("salida2.txt", "r") as tf:
-    lines = tf.read().split(' ')'''
-tf=open('salida2.txt')
 a=[]
-'''data=tf.read()
-data=data.rstrip()
-a.append(data.rsplit())'''
+b=[]
 
-for line in tf:
-    #print((line.rstrip()).rsplit())
+for line in tfpredicho:
     a.append((line.rstrip()).rsplit())
+for line2 in tfreal:
+    b.append((line2.rstrip()).rsplit())
 
+anp=np.array(a)
+anp=np.reshape(anp,(498,498))
 
-Anp=np.array(a)
+org=np.array(b)
+org=np.reshape(org,(498,498))    
 
-print(Anp[0][0])
-print(Anp[0][8])
-print(Anp[1][0])
-#tamaño de las matrices a visualizar
-size=(2000,2000)
-fArray = Anp.astype(np.float64)
-# Una matriz de ceros. 
-imagen_negra = np.zeros(size)
-filas=2000
-columnas=2000
-
-#Ynp=Anp[0,2000]
-plot.show(fArray)
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
+plot.show(anp.astype(np.float64), ax=ax1)
+plot.show(org.astype(np.float64), ax=ax2)
+fig.tight_layout()
+plot.show(anp.astype(np.float64))
+plot.show(org.astype(np.float64))
 #visualizamos la matriz
-#Se ve como una imagen negra, ya que todos los elementos (pixeles) tienen intensidad 0
 
 

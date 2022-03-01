@@ -99,6 +99,11 @@ imagePath = './31TBG/20210714/GRANULE/20210714/IMG_DATA/'
 imagePath = './31TBG/20210813/GRANULE/20210813/IMG_DATA/'
 imagePath = './31TBG/20210823/GRANULE/20210823/IMG_DATA/'
 imagePath = './31TBG/20210912/GRANULE/20210912/IMG_DATA/'
+imagePath = './31TBG/20211027/GRANULE/20211027/IMG_DATA/'
+imagePath = './31TBG/20211206/GRANULE/20211206/IMG_DATA/'
+imagePath = './31TBG/20211116/GRANULE/20211116/IMG_DATA/'
+imagePath = './31TBG/20210219/GRANULE/20210219/IMG_DATA/'
+imagePath = './31TBG/20220120/GRANULE/20220120/IMG_DATA/'
 
 
 red_file = glob.glob(imagePath+'T31TBG_20210405T105021_B04.jp2') # red band
@@ -119,6 +124,17 @@ red_file = glob.glob(imagePath+'T31TBG_20210823T105031_B04.jp2') # red band
 nir_file = glob.glob(imagePath+'T31TBG_20210823T105031_B08.jp2') # nir band
 red_file = glob.glob(imagePath+'T31TBG_20210912T105031_B04.jp2') # red band
 nir_file = glob.glob(imagePath+'T31TBG_20210912T105031_B08.jp2') # nir band
+red_file = glob.glob(imagePath+'T31TBG_20211027T105049_B04.jp2') # red band
+nir_file = glob.glob(imagePath+'T31TBG_20211027T105049_B08.jp2') # nir band
+red_file = glob.glob(imagePath+'T31TBG_20211206T105329_B04.jp2') # red band
+nir_file = glob.glob(imagePath+'T31TBG_20211206T105329_B08.jp2') # nir band
+red_file = glob.glob(imagePath+'T31TBG_20211116T105229_B04.jp2') # red band
+nir_file = glob.glob(imagePath+'T31TBG_20211116T105229_B08.jp2') # nir band
+red_file = glob.glob(imagePath+'T31TBG_20210219T104959_B04.jp2') # red band
+nir_file = glob.glob(imagePath+'T31TBG_20210219T104959_B08.jp2') # nir band
+red_file = glob.glob(imagePath+'T31TBG_20220120T105351_B04.jp2') # red band
+nir_file = glob.glob(imagePath+'T31TBG_20220120T105351_B08.jp2') # nir band
+
 
 # Abrimos las bandas con gdal
 red_link = gdal.Open(red_file[0])
@@ -147,6 +163,11 @@ outfile_name='./out/T31TBG_20210714T105031_B_NDVI.tif'
 outfile_name='./out/T31TBG_20210813T105031_B_NDVI.tif'
 outfile_name='./out/T31TBG_20210823T105031_B_NDVI.tif'
 outfile_name='./out/T31TBG_20210912T105031_B_NDVI.tif'
+outfile_name='./out/T31TBG_20211027T105049_B_NDVI.tif'
+outfile_name='./out/T31TBG_20211206T105329_B_NDVI.tif'
+outfile_name='./out/T31TBG_20211116T105229_B_NDVI.tif'
+outfile_name='./out/T31TBG_20210219T104959_B_NDVI.tif'
+outfile_name='./out/T31TBG_20220120T105351_B_NDVI.tif'
 
 x_pixels = ndvi2.shape[0] # pixels en eje x
 y_pixels = ndvi2.shape[1] # pixels en eje y
