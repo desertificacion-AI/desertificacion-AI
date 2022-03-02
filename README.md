@@ -37,6 +37,6 @@ La aplicabilidad de esta aproximación puede encaminarse hacia:
 ## 
 
 ### Participantes
-- Eva de Miguel Morales
-- Pedro Biel
-- Yineth Castiblanco Rojas
+- [Eva de Miguel Morales](https://www.linkedin.com/in/eva-de-miguel-morales-a63938a0/)
+- [Pedro Biel](https://www.linkedin.com/in/pedrobiel/)
+- [Yineth Castiblanco Rojas](https://www.linkedin.com/in/yinethcastiblancorojas/)
