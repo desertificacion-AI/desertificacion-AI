@@ -36,7 +36,7 @@ La aplicabilidad de esta aproximación puede encaminarse hacia:
 - Streamlit
 
 ### DEMO
-[Demo en Streamlit] (https://github.com/desertificacion-AI/desertificacion-AI-Streamlit)
+[Demo en Streamlit](https://github.com/desertificacion-AI/desertificacion-AI-Streamlit)
 
 ## 
 
