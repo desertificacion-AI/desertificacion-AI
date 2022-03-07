@@ -33,6 +33,10 @@ La aplicabilidad de esta aproximación puede encaminarse hacia:
 - osgeo
 - sklearn
 - Pillow
+- Streamlit
+
+### DEMO
+[Demo en Streamlit] (https://github.com/desertificacion-AI/desertificacion-AI-Streamlit)
 
 ## 
 
